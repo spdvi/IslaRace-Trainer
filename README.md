@@ -25,8 +25,6 @@
 
 · Move over the crate. Modify the prefabs and add a collider to the lid and to the crate.
 
-. Camera follow: referències a GameObjects des de scripts. Smooth camera LateUpdate
-
 . Jump: Afegir Rigidbody. Constraint X,Y,Z rotation. Nou script, Input Space, AddForce Impulse. IsGrounded
 · En Play mode canviar a Scene Window
 
