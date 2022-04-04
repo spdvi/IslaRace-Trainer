@@ -6,6 +6,7 @@ public class PlayerJump : MonoBehaviour
 {
     public float jumpForce = 4f;
     private Rigidbody rb;
+    private float fallMultiplier = 2.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -20,5 +21,10 @@ public class PlayerJump : MonoBehaviour
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
+
+        //if (rb.velocity.y < 0)
+        //{
+        //    rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        //}
     }
 }
