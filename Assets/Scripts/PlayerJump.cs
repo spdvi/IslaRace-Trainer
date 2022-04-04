@@ -7,6 +7,7 @@ public class PlayerJump : MonoBehaviour
     public float jumpForce = 4f;
     private Rigidbody rb;
     private float fallMultiplier = 2.5f;
+	private float lowJumpMultiplier = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -26,5 +27,9 @@ public class PlayerJump : MonoBehaviour
         //{
         //    rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         //}
+		//else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
+		//{
+		//	rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+		//}
     }
 }
